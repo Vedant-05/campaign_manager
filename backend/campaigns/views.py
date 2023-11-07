@@ -7,7 +7,7 @@ from .serializers import SubscriberSerializer,CampaignSerializer
 
 class CampaignListAPIView(generics.ListAPIView):
     
-    serializer_class=CampaignSerializer
+    serializer_clas =CampaignSerializer
 
     def get_queryset(self):
         return Campaign.objects.all()
